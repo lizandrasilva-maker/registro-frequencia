@@ -7,7 +7,7 @@ from io import BytesIO
 st.set_page_config(page_title="Gerador de Registro de Frequência", layout="wide")
 
 st.title("Sistema de Registro de Frequência Manual")
-st.subheader("Preencha seus dados e horários para exportar o PDF perfeitamente diagramado")
+st.subheader("Preencha seus dados e horários para exportar o PDF")
 
 # 1. Informações de Cabeçalho
 col1, col2, col3 = st.columns(3)
@@ -21,7 +21,7 @@ with col3:
     matricula = st.text_input("Matrícula", value="")
     funcionario = st.text_input("Nome do Funcionário", value="")
 
-horario = st.text_input("Horário contratual (ex: 07:30 às 17:15)", value="")
+horario = st.text_input("Horário", value="")
 
 if 'rows_data' not in st.session_state:
     st.session_state.rows_data = [
