@@ -6,7 +6,7 @@ from io import BytesIO
 
 st.set_page_config(page_title="Gerador de Registro de Frequência", layout="wide")
 
-st.title("📄 Sistema de Registro de Frequência Manual")
+st.title("Sistema de Registro de Frequência Manual")
 st.subheader("Preencha seus dados e horários para exportar o PDF perfeitamente diagramado")
 
 # 1. Informações de Cabeçalho
@@ -209,7 +209,7 @@ try:
     pdf_output = bytes(pdf.output())
 
     st.download_button(
-        label="⬇️ Baixar Registro de Frequência Perfeito (Folha Única)",
+        label="⬇️ Baixar Registro de Frequência PDF",
         data=pdf_output,
         file_name=f"Registro_Frequencia_{mes_ano.replace('/','_')}.pdf",
         mime="application/pdf",
