@@ -16,10 +16,10 @@ with col1:
     lotacao = st.text_input("Lotação", value="")
 with col2:
     cnpj = st.text_input("CNPJ", value="")
-    mes_ano = st.text_input("Mês/Ano", value="fev/26")
+    mes_ano = st.text_input("Mês/Ano", value="")
 with col3:
-    matricula = st.text_input("Matrícula", value="3-00005634")
-    funcionario = st.text_input("Nome do Funcionário", value="LIZANDRA REGIA MIRANDA DA SILVA")
+    matricula = st.text_input("Matrícula", value="")
+    funcionario = st.text_input("Nome do Funcionário", value="")
 
 horario = st.text_input("Horário contratual (ex: 07:30 às 17:15)", value="")
 
