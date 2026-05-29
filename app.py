@@ -6,6 +6,24 @@ from io import BytesIO
 
 st.set_page_config(page_title="Gerador de Registro de Frequência", layout="wide")
 
+# --- SISTEMA DE SENHA SIMPLES ---
+if "autenticado" not in st.session_state:
+    st.session_state.autenticado = False
+
+if not st.session_state.autenticado:
+    st.title("🔒 Acesso Restrito")
+    # Você pode mudar a senha 'fiec123' para a senha que você quiser!
+    senha_digitada = st.text_input("Digite a senha para acessar o sistema:", type="password")
+    
+    if st.button("Entrar"):
+        if senha_digitada == "fiec123":  # <-- Defina sua senha aqui
+            st.session_state.autenticado = True
+            st.rerun()
+        else:
+            st.error("Senha incorreta! Tente novamente.")
+    st.stop() # Interrompe o código aqui para quem não digitou a senha correta
+# --------------------------------
+
 st.title("Sistema de Registro de Frequência Manual")
 st.subheader("Preencha seus dados e horários para exportar o PDF")
 
