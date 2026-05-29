@@ -25,16 +25,7 @@ horario = st.text_input("Horário contratual (ex: 07:30 às 17:15)", value="")
 
 if 'rows_data' not in st.session_state:
     st.session_state.rows_data = [
-        {"dia": "2", "p1_ent": "09:31", "p1_sai": "11:45", "int_ent": "", "int_sai": "", "p2_ent": "13:32", "p2_sai": "17:45"},
-        {"dia": "4", "p1_ent": "07:01", "p1_sai": "12:02", "int_ent": "", "int_sai": "", "p2_ent": "13:02", "p2_sai": "18:01"},
-        {"dia": "5", "p1_ent": "07:03", "p1_sai": "13:17", "int_ent": "", "int_sai": "", "p2_ent": "00:00", "p2_sai": "00:00"},
-        {"dia": "9", "p1_ent": "09:33", "p1_sai": "11:47", "int_ent": "", "int_sai": "", "p2_ent": "13:34", "p2_sai": "17:41"},
-        {"dia": "11", "p1_ent": "07:01", "p1_sai": "12:03", "int_ent": "", "int_sai": "", "p2_ent": "13:05", "p2_sai": "18:03"},
-        {"dia": "12", "p1_ent": "07:03", "p1_sai": "13:09", "int_ent": "", "int_sai": "", "p2_ent": "00:00", "p2_sai": "00:00"},
-        {"dia": "19", "p1_ent": "07:03", "p1_sai": "13:12", "int_ent": "", "int_sai": "", "p2_ent": "00:00", "p2_sai": "00:00"},
-        {"dia": "23", "p1_ent": "09:30", "p1_sai": "11:42", "int_ent": "", "int_sai": "", "p2_ent": "13:37", "p2_sai": "17:43"},
-        {"dia": "25", "p1_ent": "07:03", "p1_sai": "12:05", "int_ent": "", "int_sai": "", "p2_ent": "13:08", "p2_sai": "18:05"},
-        {"dia": "26", "p1_ent": "07:03", "p1_sai": "13:07", "int_ent": "", "int_sai": "", "p2_ent": "", "p2_sai": ""}
+
     ]
 
 with st.form("add_row_form"):
